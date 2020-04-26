@@ -19,6 +19,9 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "500m"
+          requests:
+            memory: "64Mi"
+            cpu: "200m"
         env:
           - name: REDIS_HOST
             value: redis-cluster-ip-service
